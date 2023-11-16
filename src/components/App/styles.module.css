@@ -1,0 +1,10 @@
+.slide {
+  padding: 25px;
+  background-color: rgb(238, 250, 255);
+
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
