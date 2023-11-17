@@ -3,9 +3,15 @@
 // However since this is the API we have been given, we will
 // treat "Celsius" as "Temperature" even if the user chooses
 // to view the reading data in Fahrenheit.
-export type SensorUnit = "%" | "Celsius";
+export enum SensorUnit {
+  Percentage = "%",
+  Temperature = "Celsius",
+}
 
-export type TemperatureUnit = "Celsius" | "Fahrenheit";
+export enum TemperatureUnit {
+  Celsius = "Celsius",
+  Fahrenheit = "Fahrenheit",
+}
 
 export enum SensorType {
   Humidity = "Humidity Sensor",

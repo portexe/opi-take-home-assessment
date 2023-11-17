@@ -1,10 +1,38 @@
 .slide {
   padding: 25px;
-  background-color: rgb(238, 250, 255);
-
   height: 500px;
   display: flex;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.unitSwitch {
+  top: 25px;
+  gap: 10px;
+  right: 25px;
+  z-index: 99;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.switcherIcon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+  font-weight: bolder;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .unitSwitch {
+    top: 10px;
+    right: 10px;
+  }
 }
